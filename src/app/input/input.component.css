@@ -1,0 +1,14 @@
+.add-task {
+  align-content: center !important;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.add-task-input {
+  width: 100%;
+  padding: 0.8em;
+}
+.add-task-button {
+  text-align: center;
+  padding: 0.8em;
+}

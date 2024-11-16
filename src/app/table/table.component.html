@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Task</th>
+      <th>Done</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(task of tasks; track task.number) { @if (!task.done) {
+    <tr>
+      <td>{{ task.number }}</td>
+      <td>{{ task.description }}</td>
+
+      <td>
+        <input
+          type="checkbox"
+          [checked]="task.done"
+          (click)="deleteItem(task)"
+        />
+      </td>
+    </tr>
+    }}
+  </tbody>
+</table>
